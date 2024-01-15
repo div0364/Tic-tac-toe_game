@@ -12,12 +12,15 @@
     background: #D66D75;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #E29587, #D66D75); 
     background: linear-gradient(to right, #E29587, #D66D75);
+    background-image: url('backgroundcolor.jpg');
+    background-size: cover;
     display: grid;
     place-items: center;
     position: relative;
 }
 .game-info{
-    color: white;
+    color: black;
+    font-weight: 600;
     position:absolute;
     top:3rem;
     left:50%;
@@ -45,32 +48,33 @@
     aspect-ratio: 1/1;
     cursor: pointer;
     font-size: 3rem;
-    color:white;
+    color:black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .box1, .box2, .box4, .box5{
-    border-right:2px solid rgba(255, 255, 255, 0.25);
-    border-bottom:2px solid rgba(255, 255, 255, 0.25);
+    border-right:2px solid black;
+    border-bottom:2px solid black;
 }
 
 .box3, .box6{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 2px solid black;
 }
 
 .box7, .box8{
-    border-right:2px solid rgba(255, 255, 255, 0.25);
+    border-right:2px solid black;
 }
 .btn{
-    color:white;
+    color:black;
+    font-weight: 600;
     position: absolute;
     bottom:3rem;
     left:50%;
     transform:translateX(-50%);
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid black;
     padding: 0.5rem 2rem;
     cursor:pointer;
     /* display: none; */
@@ -79,5 +83,5 @@
     display: flex;
 }
 .win{
-    background-color: rgba(0, 255, 0, 0.3);
+    background-color:  rgb(196, 243, 101);
 }
